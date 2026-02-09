@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Rough X Developers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Outfit:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { primary: '#020617', secondary: '#D48C6A', accent: '#38bdf8', dark: '#010413', surface: '#0f172a' },
+                    fontFamily: { sans: ['Inter', 'sans-serif'], heading: ['Outfit', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-primary text-slate-200 bg-mesh min-h-screen">
+
+    <!-- Header -->
+    <header class="fixed top-0 w-full z-50 transition-all duration-500 py-6 px-4 md:px-12" id="main-header">
+        <div
+            class="max-w-7xl mx-auto backdrop-blur-xl bg-white/5 border border-white/10 rounded-3xl md:rounded-full px-6 md:px-10 py-3 flex items-center justify-between shadow-2xl">
+            <a href="index.html" class="flex-shrink-0 group flex items-center gap-2">
+                <span class="text-white font-black tracking-tighter text-xl md:text-2xl">
+                    ROUGH X <span class="text-secondary">DEVELOPERS</span> <span
+                        class="text-accent font-mono">&lt;/&gt;</span>
+                </span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:block">
+                <ul class="flex items-center gap-8 lg:gap-12 font-bold text-[11px] tracking-[3px] text-slate-400">
+                    <li><a href="index.html" class="hover:text-white transition-all px-1">HOME</a></li>
+                    <li><a href="services.html"
+                            class="text-white hover:text-white transition-all border-b-2 border-secondary pb-1 px-1">SERVICES</a>
+                    </li>
+                    <li><a href="about.html" class="hover:text-white transition-all px-1">ABOUT</a></li>
+                    <li><a href="portfolio.html" class="hover:text-white transition-all px-1">PORTFOLIO</a></li>
+                </ul>
+            </nav>
+
+            <div class="hidden md:block">
+                <a href="contact.html"
+                    class="bg-secondary text-white text-[11px] font-black tracking-widest px-8 py-3 rounded-full hover:bg-white hover:text-primary transition-all">
+                    START PROJECT
+                </a>
+            </div>
+
+            <!-- Mobile Toggle -->
+            <button class="md:hidden text-2xl text-accent p-2" id="mobile-menu-btn">
+                <i class="fas fa-bars-staggered"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="pt-48 pb-24 bg-dark/30 text-center relative overflow-hidden">
+        <div class="absolute -top-1/2 -left-1/4 w-full h-full bg-accent/5 blur-[150px] rounded-full"></div>
+        <div class="max-w-4xl mx-auto px-6 relative z-10" data-aos="fade-up">
+            <h1 class="text-6xl md:text-8xl font-black mb-8 text-white tracking-tighter">Elite <span
+                    class="text-gradient-tech">Solutions</span></h1>
+            <p class="text-slate-400 text-xl font-light">Customized technology architectures designed for dominance.</p>
+        </div>
+    </section>
+
+    <!-- Services Detail -->
+    <section class="py-32">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 space-y-48">
+
+            <!-- Service 1 -->
+            <div class="grid md:grid-cols-2 gap-24 items-center">
+                <div class="order-2 md:order-1" data-aos="fade-right">
+                    <div class="w-24 h-1 bg-accent mb-10 shadow-[0_0_15px_rgba(56,189,248,0.5)]"></div>
+                    <h2 class="text-4xl md:text-5xl font-black mb-8 text-white tracking-tight">System Architecture</h2>
+                    <p class="text-slate-400 mb-10 leading-relaxed text-lg font-light">
+                        We don't just build systems; we architect foundations. Our enterprise-grade infrastructures are
+                        engineered for high-availability, peak performance, and absolute security.
+                    </p>
+                    <ul class="grid grid-cols-1 gap-6 mb-12">
+                        <li class="flex items-center gap-4 group"><i
+                                class="fas fa-circle-check text-accent group-hover:scale-125 transition-transform"></i>
+                            <span class="text-slate-300">Scalable Cloud Infrastructures (AWS/Azure)</span>
+                        </li>
+                        <li class="flex items-center gap-4 group"><i
+                                class="fas fa-circle-check text-accent group-hover:scale-125 transition-transform"></i>
+                            <span class="text-slate-300">Robust Database Management & Tuning</span>
+                        </li>
+                        <li class="flex items-center gap-4 group"><i
+                                class="fas fa-circle-check text-accent group-hover:scale-125 transition-transform"></i>
+                            <span class="text-slate-300">Security-First Protocol Integration</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html"
+                        class="px-12 py-5 bg-secondary text-white font-bold rounded-full btn-glow">HIRE ARCHITECTS</a>
+                </div>
+                <div class="order-1 md:order-2" data-aos="fade-left">
+                    <div
+                        class="p-2 bg-white/5 rounded-[4rem] border border-white/10 blur-0 hover:blur-0 transition-all">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200"
+                            alt="Architecture"
+                            class="rounded-[3.5rem] grayscale-[40%] hover:grayscale-0 transition-all duration-700">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="grid md:grid-cols-2 gap-24 items-center">
+                <div data-aos="fade-right">
+                    <div class="p-2 bg-white/5 rounded-[4rem] border border-white/10">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=1200"
+                            alt="Software"
+                            class="rounded-[3.5rem] grayscale-[40%] hover:grayscale-0 transition-all duration-700">
+                    </div>
+                </div>
+                <div data-aos="fade-left">
+                    <div class="w-24 h-1 bg-secondary mb-10 shadow-[0_0_15px_rgba(212,140,106,0.5)]"></div>
+                    <h2 class="text-4xl md:text-5xl font-black mb-8 text-white tracking-tight">Software Engineering</h2>
+                    <p class="text-slate-400 mb-10 leading-relaxed text-lg font-light">
+                        Transforming bold ideas into sophisticated software. We craft seamless interfaces backed by
+                        powerful, efficient code to deliver unparalleled user experiences.
+                    </p>
+                    <ul class="grid grid-cols-1 gap-6 mb-12">
+                        <li class="flex items-center gap-4 group"><i
+                                class="fas fa-circle-check text-secondary group-hover:scale-125 transition-transform"></i>
+                            <span class="text-slate-300">Custom Full-Stack Web Applications</span>
+                        </li>
+                        <li class="flex items-center gap-4 group"><i
+                                class="fas fa-circle-check text-secondary group-hover:scale-125 transition-transform"></i>
+                            <span class="text-slate-300">Native & Cross-Platform Mobile Solutions</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html"
+                        class="px-12 py-5 border border-secondary text-secondary font-bold rounded-full hover:bg-secondary hover:text-white transition-all text-center">START
+                        BUILDING</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark pt-32 pb-16 border-t border-white/5 text-center">
+        <p class="text-slate-600 text-xs tracking-widest uppercase">&copy; 2026 ROUGH X DEVELOPERS. ALL RIGHTS RESERVED.
+        </p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script>AOS.init({ duration: 1000, once: true });</script>
+</body>
+
+</html>
